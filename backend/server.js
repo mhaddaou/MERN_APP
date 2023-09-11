@@ -1,7 +1,4 @@
-// iQ8Ij9h9GgfBNZeC
-// mongodb+srv://mhaddaou:<password>@cluster0.baz83mq.mongodb.net/
-// mhaddaou
-// mongodb+srv://mhaddaou:iQ8Ij9h9GgfBNZeC@cluster0.baz83mq.mongodb.net/?retryWrites=true&w=majority
+
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
