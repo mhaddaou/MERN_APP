@@ -20,6 +20,7 @@ const check_1 = __importDefault(require("./outils/check"));
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const allUsers_1 = __importDefault(require("./allUsers"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
@@ -30,7 +31,8 @@ app.get('/', (req, res) => {
 // get all users
 app.get('/users', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const users = yield userModel_1.default.find();
-    res.json(users);
+    const ret = (0, allUsers_1.default)(users);
+    res.json(ret);
 }));
 // create a new user
 app.post('/createUser', (req, res) => __awaiter(void 0, void 0, void 0, function* () {

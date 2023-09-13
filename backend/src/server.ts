@@ -8,6 +8,7 @@ import check from './outils/check';
 import bcrypt from 'bcrypt'
 import cors from 'cors';
 import dotenv from 'dotenv';
+import allUsers from './allUsers';
 dotenv.config();
 
 
@@ -23,7 +24,8 @@ app.get('/', (req : Request, res : Response) => {
 // get all users
 app.get('/users', async (req : Request, res : Response) => {
     const users = await userModel.find();
-    res.json(users);
+    const ret = allUsers(users);
+    res.json(ret);
 })
 
 

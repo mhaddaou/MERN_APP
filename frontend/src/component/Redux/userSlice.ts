@@ -5,8 +5,7 @@ const URL_USERS = import.meta.env.VITE_URL_FETCH;
 
 export interface usersType{
     _id : string;
-    name : string;
-    age : number;
+    username : string;
     email : string;
   }
 

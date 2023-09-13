@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function Login() {
-    const [cookies, setCookeis] = useCookies(["access-token" ]);
+    const [_, setCookeis] = useCookies(["access-token" ]);
     const dispatch = useAppDispatch();
     const [user, setUser] = useState('');
     const [password, setPassword] = useState('');
@@ -35,7 +35,6 @@ function Login() {
                 if (res.data.token){
                     setCookeis("access-token", res.data.token);
                     window.localStorage.setItem("userId", res.data.adminId)
-                    console.log("hadik al3awd");
                     navigate('/home')
                 }
                 else{
@@ -46,11 +45,7 @@ function Login() {
             });
         }
     }
-    // const removeCookies = () =>{
-    //     setCookeis("access-token", "");
-    //     window.localStorage.removeItem("adminId");
-    //     location.reload();
-    // }
+    
 
   return (
     <div className=" ">
@@ -101,7 +96,7 @@ function Login() {
             
 
                 <p className="text-sm font-sans font-medium text-gray-400 underline  ">Don´t have an account?
-                <button onClick={() => dispatch(chengeIt())}> Sign up</button>
+                <button onClick={() => dispatch(chengeIt('register'))}> Sign up</button>
                 </p>
                
             </div>    
