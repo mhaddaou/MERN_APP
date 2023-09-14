@@ -1,4 +1,3 @@
-import React from 'react'
 import { userSchema } from './allSchema/userSchema'
 import { ObjectId } from 'mongoose';
 import { IUsers } from './allSchema/userSchema';

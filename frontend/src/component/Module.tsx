@@ -10,8 +10,8 @@ const ModalComponent = ({isOpen, closeModal, message} : ModalType) => {
     return null;
   return (
     <div>
-        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 '>
-          <div className='bg-slate-700  w-1/3 h-1/3 rounded-lg p-4 outline outline-offset-2  outline-blue-950 shadow-lg animate-fade-in shadow-blue-700 divide-y    divide-blue-950'>
+        <div className='fixed inset-0 z-50  flex items-center justify-center bg-black bg-opacity-50 '>
+          <div className='  bg-indigo-900 absolute lg:right-20 top-[20%]   rounded-lg p-4 outline outline-offset-2  outline-blue-950 shadow-lg animate-fade-in shadow-blue-700 divide-y   divide-blue-950'>
 
           <div className='flex justify-end    pb-4'>
             <button onClick={() => closeModal()} className='text-gray-400 transition-all duration-300  hover:text-slate-300'>
@@ -29,7 +29,7 @@ const ModalComponent = ({isOpen, closeModal, message} : ModalType) => {
                 </svg>
             </button>
           </div>
-          <div className="flex items-center justify-center w-full h-[70%] text-slate-300 text-xl font-serif">{message}</div>
+          <div className="flex items-center justify-center w-full h-[70%] text-slate-300 text-xl font-serif p-10">{message}</div>
          
           </div>
         </div>

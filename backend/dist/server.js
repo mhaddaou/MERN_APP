@@ -34,11 +34,6 @@ app.get('/users', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const ret = (0, allUsers_1.default)(users);
     res.json(ret);
 }));
-// create a new user
-app.post('/createUser', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const newUser = new userModel_1.default(req.body);
-    yield newUser.save();
-}));
 // for login
 app.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { username, password } = req.body;
@@ -55,6 +50,10 @@ app.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* () 
 // to register new user
 app.post('/register', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const user = (0, check_1.default)(req);
+    const username = req.body.username;
+    const exist = yield userModel_1.default.findOne({ username });
+    if (exist)
+        return res.status(421).json({ message: "username alredy exist" });
     if (!user)
         return res.status(422).json({ message: "the password is not same" });
     const newUser = new userModel_1.default(user);

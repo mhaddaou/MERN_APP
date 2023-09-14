@@ -11,13 +11,13 @@ export default {
     },
     keyframes: {
       fadeIn: {
-        '0%': { opacity: '0', transform: 'translateY(-50px)' },
+        '0%': { opacity: '0', transform: 'translateX(100px)' },
         '100%': { opacity: '1', transform: 'translateX(0px) translateY(0px)' },
       },
       
     },
     animation: {
-      'fade-in': 'fadeIn 1s ease-in-out', 
+      'fade-in': 'fadeIn 0.5s ease-in-out', 
     },
   
   },

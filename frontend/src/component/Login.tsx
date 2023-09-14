@@ -51,7 +51,7 @@ function Login() {
     <div className=" ">
         {isOpen && <ModalComponent isOpen={isOpen} closeModal={closeModal} message={message}/>}
 <div className="grid grid-rows-6 grid-flow-col min-h-screen items-center justify-items-start text-white">
-                <div className="row-span-4 row-start-2 text-4xl">
+                <div className="row-span-4 row-start-1 text-2xl  md:text-4xl ">
                     Sign In                    
                     <form onSubmit={click}>
                     <div className="pt-10 pr-20">    
@@ -64,7 +64,7 @@ function Login() {
                             name="username"
                             required
                             placeholder="username" 
-                            className="w-full  py-3 px-12 border   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>                            
+                            className="w-full  py-3 px-12 border text-slate-600   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>                            
                     </div>
                     <div className="pt-2 pr-20">
                         <label className="text-sm font-sans font-medium">
@@ -76,7 +76,7 @@ function Login() {
                             onChange={handlPass}
                             required
                             placeholder="password" 
-                            className=" w-full  py-3 px-12 border   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>
+                            className=" w-full text-slate-600  py-3 px-12 border   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>
                         <a className="text-sm t font-sans font-medium text-gray-600 underline opacity-0">
                             Forgot password?
                         </a>
@@ -91,13 +91,13 @@ function Login() {
                         </button>
                     </div>
                         </form>                    
+                <p className="text-sm pt-20 font-sans font-medium text-gray-400 underline  ">Don´t have an account?
+                <button onClick={() => dispatch(chengeIt('register'))}> Sign up</button>
+                </p>
                 </div>
 
             
 
-                <p className="text-sm font-sans font-medium text-gray-400 underline  ">Don´t have an account?
-                <button onClick={() => dispatch(chengeIt('register'))}> Sign up</button>
-                </p>
                
             </div>    
 

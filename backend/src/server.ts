@@ -30,12 +30,7 @@ app.get('/users', async (req : Request, res : Response) => {
 
 
 
-// create a new user
-app.post('/createUser', async(req : Request, res : Response) =>{
-   const newUser = new userModel(req.body);
-   await newUser.save();
 
-})
 
 
 // for login
@@ -63,10 +58,16 @@ app.post('/login', async(req : Request, res : Response) =>{
 app.post('/register', async(req :Request, res : Response) =>{
     
     const user = check(req) ;
+    
+    const username = req.body.username;
+    const exist = await userModel.findOne({username})
+    if (exist)
+    return res.status(421).json({message : "username alredy exist"});
+
     if (!user)
         return res.status(422).json({ message: "the password is not same" });
     
-     const newUser = new userModel(user);
+    const newUser = new userModel(user);
     await newUser.save();
     
     res.json({message : "user created successfully"});

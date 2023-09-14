@@ -2,7 +2,7 @@ import Singin from "./component/Singin"
 
 function Auth() {
   return (
-    <div>
+    <div className=" bg-indigo-900  ">
         <Singin/>
     </div>
   )
