@@ -38,7 +38,7 @@ function Singin() {
           className="absolute inset-0 h-full w-full object-cover opacity-80 rounded-lg"
         />
   
-        <div className={`hidden lg:relative ${check ? '-top-32' : '-top-8'}  lg:block lg:p-12`}>
+        <div className={`hidden lg:relative ${check ? '-top-48' : '-top-8'}  lg:block lg:p-12`}>
           <div className="block text-white hover:cursor-pointer" >
             <span className="sr-only">Home</span>
             <img src="images/logom.png" className="w-20 h-20 " />
@@ -50,7 +50,7 @@ function Singin() {
           </h2>
   
           <p className="mt-4 leading-relaxed text-white/90">
-          this app is a mern stack that lets you to create your account and displayed down
+          this app is a mern stack that lets you to create your account and displayed in home page
           </p>
         </div>
       </section>
@@ -74,7 +74,7 @@ function Singin() {
             </h1>
   
             <p className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
-            this app is a mern stack that lets you to create your account and displayed down
+            this app is a mern stack that lets you to create your account and displayed in home page
             </p>
           </div>
           {!check && <Register/>}

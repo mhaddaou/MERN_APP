@@ -50,6 +50,7 @@ app.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* () 
 // to register new user
 app.post('/register', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const user = (0, check_1.default)(req);
+    res.setHeader('Content-Type', 'text/plain');
     const username = req.body.username;
     const exist = yield userModel_1.default.findOne({ username });
     if (exist)

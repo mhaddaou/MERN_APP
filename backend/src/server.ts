@@ -58,6 +58,8 @@ app.post('/login', async(req : Request, res : Response) =>{
 app.post('/register', async(req :Request, res : Response) =>{
     
     const user = check(req) ;
+    res.setHeader('Content-Type', 'text/plain');
+
     
     const username = req.body.username;
     const exist = await userModel.findOne({username})

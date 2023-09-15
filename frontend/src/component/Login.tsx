@@ -64,7 +64,7 @@ function Login() {
                             name="username"
                             required
                             placeholder="username" 
-                            className="w-full  py-3 px-12 border text-slate-600   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>                            
+                            className="w-full  py-3 px-12 border text-slate-100   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>                            
                     </div>
                     <div className="pt-2 pr-20">
                         <label className="text-sm font-sans font-medium">
@@ -76,7 +76,7 @@ function Login() {
                             onChange={handlPass}
                             required
                             placeholder="password" 
-                            className=" w-full text-slate-600  py-3 px-12 border   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>
+                            className=" w-full text-slate-100  py-3 px-12 border   rounded-md  text-base font-sans border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"/>
                         <a className="text-sm t font-sans font-medium text-gray-600 underline opacity-0">
                             Forgot password?
                         </a>
