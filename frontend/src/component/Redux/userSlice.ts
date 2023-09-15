@@ -7,6 +7,7 @@ export interface usersType{
     _id : string;
     username : string;
     email : string;
+    
   }
 
 interface initialType{
