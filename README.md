@@ -1,27 +1,41 @@
-# MERN_APP
 
+# Mern App
 
-## Description: 
-  This is a full-stack web application built with React, Vite, TypeScript, Express, and MongoDB. It allows users to create accounts, securely store them, and log in. The home page displays registered users.
+## Description
+This full-stack web application is built with React, Vite, TypeScript, Express, and MongoDB. It enables users to create accounts, securely store them, and log in. The home page displays registered users.
 
 ## Live Demo
-
-#### Access the live demo https://mern-app-x2sp.vercel.app/.
+- Access the live demo [here](https://mern-app-x2sp.vercel.app/).
 
 ## Key Features
+- Account creation and secure storage
+- User login functionality
+- Home page displaying registered users
 
--Account creation and secure storage<br/>
--User login functionality<br/>
--Home page displaying registered users<br/>
--Getting Started<br/>
-
-### Clone the repository.
--Install dependencies for both the front-end and back-end.
--Configure environment variables.
--Run the development server for both front-end and back-end.
--Access the app in your web browser.
+## Getting Started
+1. Clone the repository.
+2. Install dependencies for both the front-end and back-end.
+3. Configure environment variables.
+4. Run the development server for both front-end and back-end.
+5. Access the app in your web browser.
 
 ## Technologies Used
+- **Front-end:**
+  - React
+  - Vite
+  - TypeScript
 
--Front-end: React, Vite, TypeScript
--Back-end: Express, MongoDB, TypeScript
+- **Back-end:**
+  - Express
+  - MongoDB
+  - TypeScript
+
+## Contributing
+Contributions are welcome! Fork the repository and submit pull requests.
+
+## License
+This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+- [List any acknowledgments or resources you want to credit here.]
+
