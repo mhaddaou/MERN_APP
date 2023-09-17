@@ -2,7 +2,7 @@
 # Mern App
 
 ## Description
-This full-stack web application is built with React, Vite, TypeScript,Tailwind Css, Express, and MongoDB. It enables users to create accounts, securely store them, and log in. The home page displays registered users.
+This full-stack web application is built with React, Vite, TypeScript, Tailwind Css, Express, and MongoDB. It enables users to create accounts, securely store them, and log in. The home page displays registered users.
 
 ## Live Demo
 - Access the live demo [here](https://mern-app-x2sp.vercel.app/).
