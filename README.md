@@ -37,5 +37,5 @@ Contributions are welcome! Fork the repository and submit pull requests.
 This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
-- [List any acknowledgments or resources you want to credit here.]
+- [Creating a TypeScript React Application with Vite ](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter)
 
