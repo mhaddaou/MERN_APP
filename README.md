@@ -10,10 +10,10 @@
 
 ## Key Features
 
--Account creation and secure storage
--User login functionality
--Home page displaying registered users
--Getting Started
+-Account creation and secure storage<br/>
+-User login functionality<br/>
+-Home page displaying registered users<br/>
+-Getting Started<br/>
 
 ### Clone the repository.
 -Install dependencies for both the front-end and back-end.
