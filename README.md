@@ -37,4 +37,5 @@ This full-stack web application is built with React, Vite, TypeScript, Tailwind 
 - [Creating a TypeScript React Application with Vite ](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter)
 - [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
 - [How to set up TypeScript with Node.js and Express](https://dev.to/cristain/how-to-set-up-typescript-with-nodejs-and-express-2023-gf)
+- [Using CORS in Express](https://medium.com/zero-equals-false/using-cors-in-express-cac7e29b005b)
 - [Deploy Node API (Express Typescript) on Vercel](https://dev.to/tirthpatel/deploy-node-ts-express-typescript-on-vercel-284h)
