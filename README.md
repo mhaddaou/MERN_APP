@@ -30,6 +30,7 @@ This full-stack web application is built with React, Vite, TypeScript, Tailwind 
   - Express
   - MongoDB
   - TypeScript
+  - Nodemon (for automatic server restarting during development)
 
 
 
