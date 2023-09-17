@@ -2,7 +2,7 @@
 # Mern App
 
 ## Description
-This full-stack web application is built with React, Vite, TypeScript, Express, and MongoDB. It enables users to create accounts, securely store them, and log in. The home page displays registered users.
+This full-stack web application is built with React, Vite, TypeScript,Tailwind Css, Express, and MongoDB. It enables users to create accounts, securely store them, and log in. The home page displays registered users.
 
 ## Live Demo
 - Access the live demo [here](https://mern-app-x2sp.vercel.app/).
@@ -24,18 +24,16 @@ This full-stack web application is built with React, Vite, TypeScript, Express, 
   - React
   - Vite
   - TypeScript
+  - Tailwind Css
 
 - **Back-end:**
   - Express
   - MongoDB
   - TypeScript
 
-## Contributing
-Contributions are welcome! Fork the repository and submit pull requests.
 
-## License
-This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 - [Creating a TypeScript React Application with Vite ](https://developer.okta.com/blog/2022/03/14/react-vite-number-converter)
-
+- [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite)
+- [Deploy Node API (Express Typescript) on Vercel](https://dev.to/tirthpatel/deploy-node-ts-express-typescript-on-vercel-284h)
